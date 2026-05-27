@@ -50,13 +50,13 @@ function ImpactPage() {
           </div>
           <div className="grid gap-4">
             {[
-              { c: "acacia", t: "Crops protected", d: "Maize, sorghum and vegetable fields kept standing through harvest season." },
-              { c: "savanna", t: "Lives saved", d: "Earlier warnings reduce nighttime encounters between people and herds." },
-              { c: "sky-brand", t: "Elephants preserved", d: "Less retaliatory killing as conflict drops in pilot areas." },
-              { c: "elephant", t: "Women in tech", d: "Internship and training pathways with BIUST and UB." },
+              { c: "bg-acacia", t: "Crops protected", d: "Maize, sorghum and vegetable fields kept standing through harvest season." },
+              { c: "bg-savanna", t: "Lives saved", d: "Earlier warnings reduce nighttime encounters between people and herds." },
+              { c: "bg-sky-brand", t: "Elephants preserved", d: "Less retaliatory killing as conflict drops in pilot areas." },
+              { c: "bg-elephant", t: "Women in tech", d: "Internship and training pathways with BIUST and UB." },
             ].map((b) => (
               <div key={b.t} className="rounded-2xl bg-offwhite border border-black/5 p-5 flex gap-4">
-                <span className={`mt-1 h-3 w-3 rounded-full bg-${b.c}`} />
+                <span className={`mt-1 h-3 w-3 rounded-full ${b.c}`} />
                 <div>
                   <div className="font-display font-bold text-elephant">{b.t}</div>
                   <p className="text-sm text-elephant/70 mt-1">{b.d}</p>
