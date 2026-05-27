@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VrDemoRouteImport } from './routes/vr-demo'
 import { Route as SolutionRouteImport } from './routes/solution'
 import { Route as PartnershipsRouteImport } from './routes/partnerships'
 import { Route as ImpactRouteImport } from './routes/impact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VrDemoRoute = VrDemoRouteImport.update({
+  id: '/vr-demo',
+  path: '/vr-demo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SolutionRoute = SolutionRouteImport.update({
   id: '/solution',
   path: '/solution',
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/impact': typeof ImpactRoute
   '/partnerships': typeof PartnershipsRoute
   '/solution': typeof SolutionRoute
+  '/vr-demo': typeof VrDemoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/impact': typeof ImpactRoute
   '/partnerships': typeof PartnershipsRoute
   '/solution': typeof SolutionRoute
+  '/vr-demo': typeof VrDemoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +70,27 @@ export interface FileRoutesById {
   '/impact': typeof ImpactRoute
   '/partnerships': typeof PartnershipsRoute
   '/solution': typeof SolutionRoute
+  '/vr-demo': typeof VrDemoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/impact' | '/partnerships' | '/solution'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/impact'
+    | '/partnerships'
+    | '/solution'
+    | '/vr-demo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/impact' | '/partnerships' | '/solution'
-  id: '__root__' | '/' | '/about' | '/impact' | '/partnerships' | '/solution'
+  to: '/' | '/about' | '/impact' | '/partnerships' | '/solution' | '/vr-demo'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/impact'
+    | '/partnerships'
+    | '/solution'
+    | '/vr-demo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -77,10 +99,18 @@ export interface RootRouteChildren {
   ImpactRoute: typeof ImpactRoute
   PartnershipsRoute: typeof PartnershipsRoute
   SolutionRoute: typeof SolutionRoute
+  VrDemoRoute: typeof VrDemoRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/vr-demo': {
+      id: '/vr-demo'
+      path: '/vr-demo'
+      fullPath: '/vr-demo'
+      preLoaderRoute: typeof VrDemoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/solution': {
       id: '/solution'
       path: '/solution'
@@ -125,6 +155,7 @@ const rootRouteChildren: RootRouteChildren = {
   ImpactRoute: ImpactRoute,
   PartnershipsRoute: PartnershipsRoute,
   SolutionRoute: SolutionRoute,
+  VrDemoRoute: VrDemoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
