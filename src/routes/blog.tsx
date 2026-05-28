@@ -4,6 +4,7 @@ import orangeDemo from "@/assets/blog/orange-demo.jpg";
 import oscStage from "@/assets/blog/osc-winner-stage.jpg";
 import oscBanner from "@/assets/blog/osc-winner-banner.jpg";
 import expoBooth from "@/assets/blog/expo-booth.jpg";
+import aspireSeedFund from "@/assets/blog/aspire-seed-fund.jpg";
 
 export const Route = createFileRoute("/blog")({
   component: BlogPage,
