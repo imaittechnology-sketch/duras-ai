@@ -4,6 +4,7 @@ import orangeDemo from "@/assets/blog/orange-demo.jpg";
 import oscStage from "@/assets/blog/osc-winner-stage.jpg";
 import oscBanner from "@/assets/blog/osc-winner-banner.jpg";
 import expoBooth from "@/assets/blog/expo-booth.jpg";
+import aspireSeedFund from "@/assets/blog/aspire-seed-fund.jpg";
 
 export const Route = createFileRoute("/blog")({
   component: BlogPage,
@@ -50,6 +51,13 @@ const posts = [
     c: "Event",
     date: "Apr 2026",
     img: expoBooth,
+  },
+  {
+    t: "Duras AI wins Aspire Leaders 2025 Seed Fund Round 2",
+    d: "Selected from over 80 grassroots innovators worldwide, Duras AI receives crucial initial funding from the Aspire Institute to scale autonomous drone protection for farmers across Botswana.",
+    c: "Milestone",
+    date: "Apr 2026",
+    img: aspireSeedFund,
   },
   { t: "Inside our first Chobe field test", d: "What we learned flying drones over elephant corridors at dawn.", c: "Field notes", date: "May 2026" },
   { t: "How VR licensing funds farmer alerts", d: "Breaking down the cross-subsidy model that powers our work.", c: "Model", date: "Apr 2026" },
