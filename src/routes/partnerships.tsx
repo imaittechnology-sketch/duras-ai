@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
+import aspireSeedFund from "@/assets/blog/aspire-seed-fund.jpg";
 
 export const Route = createFileRoute("/partnerships")({
   component: PartnershipsPage,
@@ -73,6 +74,30 @@ function PartnershipsPage() {
             {["Orange Botswana", "Aspire Institute", "BIUST", "DWNP", "HATAB"].map((p) => (
               <div key={p} className="h-20 rounded-xl border border-dashed border-black/15 flex items-center justify-center text-elephant/55 text-sm font-mono">{p}</div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-5 py-20">
+        <div className="grid md:grid-cols-2 gap-10 items-center rounded-3xl bg-elephant text-white overflow-hidden">
+          <div className="aspect-[4/3] md:aspect-auto md:h-full">
+            <img src={aspireSeedFund} alt="Aspire Leaders Seed Fund winner" className="w-full h-full object-cover" />
+          </div>
+          <div className="p-8 md:p-12">
+            <span className="font-mono text-xs uppercase tracking-widest text-savanna">Partner spotlight</span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">Backed by the Aspire Institute</h2>
+            <p className="mt-4 text-white/80">
+              Duras AI was selected as a 2025 Aspire Leaders Seed Fund Round 2 winner — one of a handful of grassroots ventures
+              chosen from over 80 global applicants to receive catalytic funding and mentorship from Harvard-affiliated leaders.
+            </p>
+            <a
+              href="https://www.aspireleaders.org/2026/04/powering-the-future-celebrating-our-2025-seed-fund-round-2-winners/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-savanna text-charcoal font-semibold px-5 py-2.5 hover:bg-savanna/90 transition"
+            >
+              Read the announcement →
+            </a>
           </div>
         </div>
       </section>
