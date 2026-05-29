@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import aspireSeedFund from "@/assets/blog/aspire-seed-fund.jpg";
+import aspireLogo from "@/assets/partners/aspire.jpeg";
+import orangeDigitalLogo from "@/assets/partners/orange-digital-center.jpeg";
 
 export const Route = createFileRoute("/partnerships")({
   component: PartnershipsPage,
@@ -71,17 +73,18 @@ function PartnershipsPage() {
         <div className="max-w-7xl mx-auto px-5 py-16">
           <h2 className="text-xl font-display font-bold text-elephant">Trusted by partners across Botswana</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="h-24 rounded-xl bg-white border border-black/10 flex items-center justify-center p-3 shadow-sm">
+              <img src={aspireLogo} alt="Aspire Institute — Aspire Leaders Program" className="max-h-full max-w-full object-contain" />
+            </div>
+            <div className="h-24 rounded-xl bg-black flex items-center justify-center p-3 shadow-sm">
+              <img src={orangeDigitalLogo} alt="Orange Digital Center" className="max-h-full max-w-full object-contain" />
+            </div>
             {[
-              { name: "Orange", sub: "Botswana", bg: "bg-[#FF7900]", fg: "text-white", mark: "orange" },
-              { name: "Aspire", sub: "Institute", bg: "bg-[#0A2540]", fg: "text-white", mark: "aspire" },
-              { name: "BIUST", sub: "University", bg: "bg-[#0B6E4F]", fg: "text-white", mark: "biust" },
-              { name: "DWNP", sub: "Botswana Gov.", bg: "bg-[#1A1A1A]", fg: "text-white", mark: "dwnp" },
-              { name: "HATAB", sub: "Tourism Assoc.", bg: "bg-[#C0392B]", fg: "text-white", mark: "hatab" },
+              { name: "BIUST", sub: "University", bg: "bg-[#0B6E4F]" },
+              { name: "DWNP", sub: "Botswana Gov.", bg: "bg-[#1A1A1A]" },
+              { name: "HATAB", sub: "Tourism Assoc.", bg: "bg-[#C0392B]" },
             ].map((p) => (
-              <div
-                key={p.name}
-                className={`h-20 rounded-xl ${p.bg} ${p.fg} flex flex-col items-center justify-center px-2 shadow-sm`}
-              >
+              <div key={p.name} className={`h-24 rounded-xl ${p.bg} text-white flex flex-col items-center justify-center px-2 shadow-sm`}>
                 <span className="font-display font-extrabold text-lg leading-none tracking-tight">{p.name}</span>
                 <span className="mt-1 text-[10px] font-mono uppercase tracking-widest opacity-80">{p.sub}</span>
               </div>
