@@ -71,10 +71,23 @@ function PartnershipsPage() {
         <div className="max-w-7xl mx-auto px-5 py-16">
           <h2 className="text-xl font-display font-bold text-elephant">Trusted by partners across Botswana</h2>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
-            {["Orange Botswana", "Aspire Institute", "BIUST", "DWNP", "HATAB"].map((p) => (
-              <div key={p} className="h-20 rounded-xl border border-dashed border-black/15 flex items-center justify-center text-elephant/55 text-sm font-mono">{p}</div>
+            {[
+              { name: "Orange", sub: "Botswana", bg: "bg-[#FF7900]", fg: "text-white", mark: "orange" },
+              { name: "Aspire", sub: "Institute", bg: "bg-[#0A2540]", fg: "text-white", mark: "aspire" },
+              { name: "BIUST", sub: "University", bg: "bg-[#0B6E4F]", fg: "text-white", mark: "biust" },
+              { name: "DWNP", sub: "Botswana Gov.", bg: "bg-[#1A1A1A]", fg: "text-white", mark: "dwnp" },
+              { name: "HATAB", sub: "Tourism Assoc.", bg: "bg-[#C0392B]", fg: "text-white", mark: "hatab" },
+            ].map((p) => (
+              <div
+                key={p.name}
+                className={`h-20 rounded-xl ${p.bg} ${p.fg} flex flex-col items-center justify-center px-2 shadow-sm`}
+              >
+                <span className="font-display font-extrabold text-lg leading-none tracking-tight">{p.name}</span>
+                <span className="mt-1 text-[10px] font-mono uppercase tracking-widest opacity-80">{p.sub}</span>
+              </div>
             ))}
           </div>
+          <p className="mt-4 text-xs text-elephant/50">Wordmarks shown for identification; partner relationships at varying stages.</p>
         </div>
       </section>
 
