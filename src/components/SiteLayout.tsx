@@ -1,6 +1,6 @@
 import { Link, Outlet } from "@tanstack/react-router";
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logoAsset from "../assets/durasai-logo.png.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -20,8 +20,7 @@ export function SiteLayout() {
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-black/5">
         <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5">
-            <img src={logo} alt="Duras AI logo" width={36} height={36} className="h-9 w-9" />
-            <span className="font-display font-bold text-elephant tracking-tight text-lg">DURAS<span className="text-savanna">AI</span></span>
+            <img src={logoAsset.url} alt="Duras AI logo" className="h-10 w-auto" />
           </Link>
           <nav className="hidden lg:flex items-center gap-7">
             {nav.map((n) => (
@@ -81,10 +80,7 @@ export function SiteLayout() {
       <footer className="bg-elephant text-white/90 mt-20">
         <div className="max-w-7xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <img src={logo} alt="" width={36} height={36} className="h-9 w-9" />
-              <span className="font-display font-bold text-white tracking-tight text-lg">DURAS<span className="text-savanna">AI</span></span>
-            </div>
+            <img src={logoAsset.url} alt="Duras AI" className="h-10 w-auto brightness-0 invert" />
             <p className="mt-4 max-w-md text-sm text-white/70 leading-relaxed">
               AI for conservation. VR for sustainable tourism. Protecting both communities and elephants — built in Botswana.
             </p>
