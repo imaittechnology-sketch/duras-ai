@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Duras AI — AI & VR for Conservation and Sustainable Tourism" },
       { name: "description", content: "Botswana-born deep tech using AI, drones and VR to predict elephant movement, prevent human-wildlife conflict, and power sustainable tourism." },
       { name: "author", content: "Duras AI" },
-      { property: "og:title", content: "Duras AI" },
-      { property: "og:description", content: "AI for conservation. VR for sustainable tourism. Protecting both communities and elephants." },
+      { property: "og:title", content: "Duras AI — AI & VR for Conservation and Sustainable Tourism" },
+      { property: "og:description", content: "Botswana-born deep tech using AI, drones and VR to predict elephant movement, prevent human-wildlife conflict, and power sustainable tourism." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Duras AI — AI & VR for Conservation and Sustainable Tourism" },
+      { name: "twitter:description", content: "Botswana-born deep tech using AI, drones and VR to predict elephant movement, prevent human-wildlife conflict, and power sustainable tourism." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a3ac8e2a-eb1e-4133-9000-3ca9e90a7c00/id-preview-7ce13ba5--76f49e6d-3f38-4cb7-bede-b88907206feb.lovable.app-1780747179194.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a3ac8e2a-eb1e-4133-9000-3ca9e90a7c00/id-preview-7ce13ba5--76f49e6d-3f38-4cb7-bede-b88907206feb.lovable.app-1780747179194.png" },
     ],
     links: [
       {
