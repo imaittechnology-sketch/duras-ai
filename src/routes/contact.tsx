@@ -60,7 +60,7 @@ function ContactPage() {
           <div className="rounded-2xl bg-white border border-black/5 p-6">
             <div className="font-mono text-xs uppercase tracking-widest text-savanna">Social</div>
             <div className="mt-2 flex gap-3 text-elephant">
-              <a href="#" className="hover:text-savanna">LinkedIn</a>
+              <a href="https://www.linkedin.com/company/duras-ai/" target="_blank" rel="noopener noreferrer" className="hover:text-savanna">LinkedIn</a>
               <a href="#" className="hover:text-savanna">YouTube</a>
               <a href="#" className="hover:text-savanna">X</a>
             </div>

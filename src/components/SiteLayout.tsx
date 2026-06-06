@@ -99,7 +99,7 @@ export function SiteLayout() {
               <li>imaittechnology@africanimpactinitiative.com</li>
               <li>Gaborone, Botswana</li>
               <li className="flex gap-3 pt-2">
-                <a href="#" aria-label="LinkedIn" className="hover:text-savanna">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/duras-ai/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-savanna">LinkedIn</a>
                 <a href="#" aria-label="YouTube" className="hover:text-savanna">YouTube</a>
                 <a href="#" aria-label="X" className="hover:text-savanna">X</a>
               </li>
