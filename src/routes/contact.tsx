@@ -51,7 +51,7 @@ function ContactPage() {
         <aside className="space-y-5">
           <div className="rounded-2xl bg-white border border-black/5 p-6">
             <div className="font-mono text-xs uppercase tracking-widest text-savanna">Email</div>
-            <div className="mt-1 text-elephant font-display font-bold">hello@durasai.com</div>
+            <div className="mt-1 text-elephant font-display font-bold">imaittechnology@africanimpactinitiative.com</div>
           </div>
           <div className="rounded-2xl bg-white border border-black/5 p-6">
             <div className="font-mono text-xs uppercase tracking-widest text-savanna">Office</div>

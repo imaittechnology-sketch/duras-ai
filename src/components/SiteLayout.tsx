@@ -96,7 +96,7 @@ export function SiteLayout() {
           <div>
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-3">Contact</h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li>hello@durasai.com</li>
+              <li>imaittechnology@africanimpactinitiative.com</li>
               <li>Gaborone, Botswana</li>
               <li className="flex gap-3 pt-2">
                 <a href="#" aria-label="LinkedIn" className="hover:text-savanna">LinkedIn</a>
