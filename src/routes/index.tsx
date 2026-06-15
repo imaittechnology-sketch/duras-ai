@@ -3,6 +3,8 @@ import { Link } from "@tanstack/react-router";
 import heroImg from "../assets/hero-elephants.jpg";
 import aiImg from "../assets/ai-detection.jpg";
 import vrImg from "../assets/vr-tourism.jpg";
+import bookingImg from "../assets/direct-booking.jpg";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
