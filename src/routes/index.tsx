@@ -134,6 +134,60 @@ function Index() {
         </div>
       </section>
 
+      {/* Direct Booking */}
+      <section className="max-w-7xl mx-auto px-5 py-20 md:py-28">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div className="order-2 lg:order-1">
+            <img
+              src={bookingImg}
+              alt="Safari lodge direct booking platform on laptop and phone with elephants in the background"
+              width={1280}
+              height={960}
+              loading="lazy"
+              className="rounded-3xl w-full object-cover shadow-lg"
+            />
+          </div>
+          <div className="order-1 lg:order-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-sky-brand">For lodges & camps</span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold text-elephant tracking-tight">
+              Direct booking. Fair commission.
+            </h2>
+            <p className="mt-4 text-elephant/75 leading-relaxed">
+              Stop losing revenue to online travel agencies. Duras AI's direct booking engine lets safari lodges and eco-camps take reservations on their own terms — with commissions as low as 8-10% instead of the industry standard 30-50%.
+            </p>
+
+            <div className="mt-8 grid sm:grid-cols-2 gap-4">
+              <div className="rounded-2xl bg-offwhite border border-black/5 p-5">
+                <div className="text-3xl font-display font-bold text-sky-brand">8-10%</div>
+                <div className="text-sm text-elephant/70 mt-1">Commission with Duras AI</div>
+              </div>
+              <div className="rounded-2xl bg-offwhite border border-black/5 p-5">
+                <div className="text-3xl font-display font-bold text-elephant/40 line-through">30-50%</div>
+                <div className="text-sm text-elephant/70 mt-1">Typical OTA commission</div>
+              </div>
+            </div>
+
+            <ul className="mt-8 space-y-3 text-sm text-elephant/80">
+              {[
+                "Keep guest relationships and data",
+                "Integrated with VR pre-arrival experiences",
+                "Instant payouts — no 60-day holds",
+                "Built-in conservation fee transparency",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="mt-0.5 h-4 w-4 rounded-full bg-savanna/30 text-savanna flex items-center justify-center text-[10px] shrink-0">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <Link to="/partnerships" className="mt-8 inline-flex items-center justify-center rounded-full bg-sky-brand px-6 py-3 text-sm font-semibold text-white hover:bg-sky-brand/90 transition">
+              Join as a lodge partner →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Impact preview */}
       <section className="max-w-7xl mx-auto px-5 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
